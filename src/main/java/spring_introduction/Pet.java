@@ -1,4 +1,4 @@
-package spring_introdaction;
+package spring_introduction;
 
 public interface Pet {
 
