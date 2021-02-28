@@ -1,8 +1,11 @@
 package spring_introduction;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component ("catBean")
+//@Primary
 public class Cat implements Pet{
 
     String name;

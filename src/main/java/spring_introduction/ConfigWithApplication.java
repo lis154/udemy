@@ -10,6 +10,7 @@ public class ConfigWithApplication {
 //        cat.say();
         Person person = context.getBean("personBean", Person.class);
         person.callYourPet();
+        System.out.println(person.getSurname() + "     " + person.getAge());
 
     }
 }

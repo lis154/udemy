@@ -2,6 +2,8 @@ package spring_introduction;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.imageio.plugins.jpeg.JPEGImageReadParam;
+
 public class Test5 {
 
 
@@ -12,6 +14,6 @@ public class Test5 {
         Dog yourDog = context.getBean("myPet", Dog.class);
         yourDog.say();
         context.close();
-        System.out.println("test");
+
     }
 }
