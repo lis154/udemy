@@ -1,8 +1,9 @@
 package spring_introduction;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 @Component ("catBean")
 //@Primary
@@ -27,10 +28,12 @@ public class Cat implements Pet{
         System.out.println("May-May");
     }
 
+    @PostConstruct
     public void init(){
         System.out.println("Class cat init method");
     }
 
+    @PreDestroy
     public void destroy(){
         System.out.println("Class cat destroy method");
     }
